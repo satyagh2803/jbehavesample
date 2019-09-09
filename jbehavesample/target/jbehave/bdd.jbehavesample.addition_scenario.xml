@@ -1,0 +1,30 @@
+<story path="bdd/jbehavesample/addition_scenario.story" title="">
+<scenario keyword="Scenario:" title="Addition of numbers">
+<examples keyword="Examples:">
+<step>Given I have two numbers &lt;value1&gt; and &lt;value2&gt;</step>
+<step>When I add these numbers</step>
+<step>Then The total should be &lt;sum&gt;</step>
+<parameters>
+<names><name>value1</name><name>value2</name><name>sum</name></names>
+<values><value>8</value><value>3</value><value>11</value></values>
+<values><value>10</value><value>20</value><value>30</value></values>
+<values><value>40</value><value>50</value><value>90</value></values>
+</parameters>
+
+<example keyword="Example:">{value1=8, value2=3, sum=11}</example>
+<step outcome="successful">Given I have two numbers <parameter>8</parameter> and <parameter>3</parameter></step>
+<step outcome="successful">When I add these numbers</step>
+<step outcome="successful">Then The total should be <parameter>11</parameter></step>
+
+<example keyword="Example:">{value1=10, value2=20, sum=30}</example>
+<step outcome="successful">Given I have two numbers <parameter>10</parameter> and <parameter>20</parameter></step>
+<step outcome="successful">When I add these numbers</step>
+<step outcome="successful">Then The total should be <parameter>30</parameter></step>
+
+<example keyword="Example:">{value1=40, value2=50, sum=90}</example>
+<step outcome="successful">Given I have two numbers <parameter>40</parameter> and <parameter>50</parameter></step>
+<step outcome="successful">When I add these numbers</step>
+<step outcome="successful">Then The total should be <parameter>90</parameter></step>
+</examples>
+</scenario>
+</story>

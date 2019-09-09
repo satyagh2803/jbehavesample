@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Sep 09 10:52:54 IST 2019
+bdd/jbehavesample/addition_scenario.story=0
+threads=1
+total=0
+threadAverage=0

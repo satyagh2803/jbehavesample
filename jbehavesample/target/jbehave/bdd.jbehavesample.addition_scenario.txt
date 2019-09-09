@@ -1,0 +1,30 @@
+
+(bdd/jbehavesample/addition_scenario.story)
+Scenario: Addition of numbers
+Examples:
+Given I have two numbers <value1> and <value2>
+When I add these numbers
+Then The total should be <sum>
+
+|value1|value2|sum|
+|8|3|11|
+|10|20|30|
+|40|50|90|
+
+Example: {value1=8, value2=3, sum=11}
+Given I have two numbers 8 and 3
+When I add these numbers
+Then The total should be 11
+
+Example: {value1=10, value2=20, sum=30}
+Given I have two numbers 10 and 20
+When I add these numbers
+Then The total should be 30
+
+Example: {value1=40, value2=50, sum=90}
+Given I have two numbers 40 and 50
+When I add these numbers
+Then The total should be 90
+
+
+
